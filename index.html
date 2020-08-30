@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <!--<link rel="stylesheet" href="https://www.glyphicons.com">-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="/bower_components/bootstrap-horizon/bootstrap-horizon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>DigiDemy</title>
+</head>
+<body>
+ <!--START HERE-->
+ <!--navbar top-->
+ <nav class="navbar navbar-expand-md navbar-light fixed-top bg-white mb-2">
+     <div class="container">
+         <a href="index.html" class="navbar-brand">digidemy</a>
+         <div>
+             <i class="fa fa-search fa-sm search-icon pr-1"></i>
+             <input class="search" type="text" placeholder="جستجو" dir="rtl">
+         </div>
+         <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar1">
+             <i class="fas fa-bars"></i>
+         </button>
+         <div class="collapse navbar-collapse" id="navbar1">
+             <ul class="navbar-nav ml-auto text-right">
+                 <li class="nav-item active">
+                     <a href="login.html" class="nav-link">ورود</a>
+                 </li>
+                 <li class="nav-item">
+                     <a href="login.html" class="nav-link">عضویت</a>
+                 </li>
+                 <li class="nav-item">
+                     <a href="courses.html" class="nav-link">دوره ها</a>
+                 </li>
+                 <li class="nav-item">
+                     <a href="events.html" class="nav-link">رویدادها</a>
+                 </li>
+                 <li class="nav-item">
+                     <a href="contact.html" class="nav-link">درباره ما</a>
+                 </li>
+             </ul>
+         </div>
+     </div>
+ </nav>
+ <!--carousel slider top-->
+ <div id="slider1" class="carousel slide mb-2" data-ride="carousel">
+     <!-- Indicators -->
+     <ol class="carousel-indicators"></ol>
+     <!-- Wrapper for slides -->
+     <div class="carousel-inner">
+     </div>
+     <!-- Controls -->
+     <a class="carousel-control-prev" href="#slider1" data-slide="prev">
+         <span class="carousel-control-prev-icon"></span>
+     </a>
+     <a class="carousel-control-next" href="#slider1" data-slide="next">
+         <span class="carousel-control-next-icon"></span>
+     </a>
+ </div>
+ <!--devider-->
+ <section id="devider" class="py-5">
+     <div class="container">
+         <div class="row">
+                 <div class="col-md-8">
+                     <p class="text-right">.دیجی دمی بستری است برای همه ، جهت برگزاری کلاس ها ، رویداد ها و دوره های حضوری و آنلاین.جهت استفاده از تمامی امکانات دیجی دمی وارد شوید</p>
+                 </div>
+             <div class="col-md-4">
+                 <a href="login.html" class="btn btn-info btn-sm mb-2">ورود / ثبت نام</a>
+                 <button  class="btn btn-sormei btn-sm mb-2" data-toggle="modal" data-target="#emkanat">مشاهده امکانات</button>
+             </div>
+         </div>
+     </div>
+ </section>
+ <!--modal-->
+ <div class="modal" id="emkanat">
+     <div class="modal-dialog">
+         <div class="modal-content">
+             <div class="modal-header">
+                 <h6 class="modal-title pl-5">امکانات سایت</h6>
+                 <button class="close ml-0" data-dismiss="modal">&times;</button>
+             </div>
+             <div class="modal-body facilities">
+
+             </div>
+         </div>
+     </div>
+ </div>
+ <!--courses-->
+ <section id="courses" class="py-5">
+     <div class="container">
+         <div class="row">
+             <div class="col-md-4">
+                 <h5 class="text-right mb-5 title">دوره های پیشنهادی/<a href="courses.html">مشاهده همه</a></h5>
+                 <ul class="courses"></ul>
+             </div>
+             <div class="col-md-8 d-none d-md-block mt-5 course-img">
+
+             </div>
+         </div>
+     </div>
+ </section>
+ <!--Events-->
+ <section id="events" class="py-5 background">
+     <div class="container">
+         <div class="row">
+             <div class="col">
+                 <h5 class="text-right mb-5 title pb-5">رویدادهای اخیر/<a href="events.html">مشاهده همه</a></h5>
+                 <div class="row flex-row flex-md-nowrap event">
+
+
+                 </div>
+             </div>
+
+         </div>
+     </div>
+ </section>
+ <!--teacher & school login-->
+ <section id="login" class="py-5">
+     <div class="container">
+         <div class="row">
+
+             <div class="col-md-4">
+                 <div class="card p-4 mb-2  bg-sormei text-white school">
+                 <div class="card-body">
+                     <h5 class="text-center">صاحب آموزشگاه هستید</h5>
+                     <h6 class="text-center">همین حالا آموزشگاه خود را ثبت کنید</h6>
+                     <a href="login.html">
+                     <button class="btn btn-block btn-outline-light mt-5">ثبت آموزشگاه</button></a>
+                 </div>
+             </div>
+
+             </div>
+             <div class="col-4"></div>
+             <div class="col-md-4">
+                 <div class="card p-4 border-sormei text-sormei teacherlogin">
+                     <div class="card-body">
+                         <h5 class="text-center">توانایی تدریس دارید</h5>
+                         <h6 class="text-center">برای تدریس در آموزشگاه ها ثبت نام کنید</h6>
+                         <a href="login.html">
+                         <button class="btn btn-block border-sormei btn-outline-sormeis text-sormei mt-5">استاد هستم:)</button></a>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </section>
+ <footer id="main-footer" class="bg-sormei">
+     <div class="container">
+         <div class="row">
+             <div class="col-md-6 pt-5 mx-auto">
+                 <p class="lead text-center">copyright &copy; <span id="year"></span></p>
+             </div>
+         </div>
+     </div>
+ </footer>
+
+
+
+
+<script src="http://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="javascript/bootstrap.min.js"></script>
+ <script src="javascript/javascr.js"></script>
+<script>
+    //get the current year for copyright
+    $('#year').text(new Date().getFullYear());
+
+
+</script>
+</body>
+</html>

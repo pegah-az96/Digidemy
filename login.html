@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <!--<link rel="stylesheet" href="https://www.glyphicons.com">-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="/bower_components/bootstrap-horizon/bootstrap-horizon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Bootstrap Theme</title>
+</head>
+<body class="login-bg">
+<div class="dark">
+    <div class="container">
+    <div class="row">
+        <div class="col-12 mt-3 text-left">
+            <a href="index.html" class="text-white"><i class="fas fa-angle-double-left"></i></a>
+        </div>
+        <div class="col-md-6 mt-5">
+            <button class="tablink" onclick="openPage('signin')" id="sabt">ثبت نام</button>
+            <button class="tablink" onclick="openPage('login')" id="defaultOpen">ورود</button>
+
+            <div id="login" class="tabcontent">
+                <form action="">
+                    <h6 class="text-sormei text-right mr-3">نام کاربری</h6>
+                    <div class="input-container pl-3">
+                        <i class="fa fa-user icon pr-4"></i>
+                        <input class="form-control pr-5" type="text" placeholder="|" id="username">
+                    </div>
+
+                    <h6 class="text-sormei text-right mr-3 mt-4">رمز عبور</h6>
+                    <div class="input-container pl-3">
+                        <i class="fas fa-unlock icon pr-4"></i>
+                        <input class="form-control pr-5" type="text" placeholder="|" id="password">
+                    </div>
+
+                    <div class="input-container mt-5">
+                        <button type="submit" class="btn btn-sormei btn-block">ورود</button>
+                    </div>
+
+                </form>
+            </div>
+
+            <div id="signin" class="tabcontent">
+                <form action="">
+                    <h6 class="text-sormei text-right mr-3">نام</h6>
+                    <div class="input-container pl-3">
+                        <i class="fa fa-user icon pr-4"></i>
+                        <input class="form-control pr-5" type="text" placeholder="|" id="firstname">
+                    </div>
+
+                    <h6 class="text-sormei text-right mr-3">نام خانوادگی</h6>
+                    <div class="input-container pl-3">
+                        <i class="fa fa-user icon pr-4"></i>
+                        <input class="form-control pr-5" type="text" placeholder="|" id="lastname">
+                    </div>
+
+                    <h6 class="text-sormei text-right mr-3">آدرس ایمیل</h6>
+                    <div class="input-container pl-3">
+                        <i class="fa fa-envelope icon pr-4"></i>
+                        <input class="form-control pr-5" type="text" placeholder="|" id="email">
+                    </div>
+
+                    <h6 class="text-sormei text-right mr-3">شماره تلفن *</h6>
+                    <div class="input-container pl-3">
+                        <i class="fa fa-mobile-alt icon pr-4"></i>
+                        <input class="form-control pr-5" type="text" placeholder="|" id="phone">
+                    </div>
+
+                    <h6 class="text-sormei text-right mr-3 mt-4">رمز عبور</h6>
+                    <div class="input-container pl-3">
+                        <i class="fas fa-lock icon pr-4"></i>
+                        <input class="form-control pr-5" type="password" placeholder="|" name="selectpassword">
+                    </div>
+
+                    <h6 class="text-sormei text-right mr-3 mt-4">تکرار رمز عبور</h6>
+                    <div class="input-container pl-3">
+                        <i class="fas fa-lock icon pr-4"></i>
+                        <input class="form-control pr-5" type="password" placeholder="|" name="confirmpassword">
+                    </div>
+
+                    <div class="input-container mt-5">
+                        <button type="submit" class="btn btn-sormei btn-block">ثبت اطلاعات</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+        <div class="col-md-6 mt-5 text-right pr-5 d-none d-md-block">
+            <h4 class="text-white mb-5 pr-3">با عضویت در دیجی دمی :</h4>
+            <div class="d-flex mb-5 pr-5">
+                <i class="fas fa-check-square fa-2x bg-sormei"></i>
+                <h5 class="text-white align-self-center pr-3">دانش خود را ارتقا دهید.</h5>
+            </div>
+
+            <div class="d-flex mb-5 pr-5">
+                <i class="fas fa-check-square fa-2x bg-sormei"></i>
+                <h5 class="text-white align-self-center pr-3">مهارت ها را افزایش دهید.</h5>
+            </div>
+
+            <div class="d-flex mb-5 pr-5">
+                <i class="fas fa-check-square fa-2x bg-sormei"></i>
+                <h5 class="text-white align-self-center pr-3">کلاس خود را به راحتی مدیریت کنید.</h5>
+            </div>
+
+            <div class="d-flex mb-5 pr-5">
+                <i class="fas fa-check-square fa-2x bg-sormei"></i>
+                <h5 class="text-white align-self-center pr-3">آموزشگاه خود را آنلاین و به روز کنید.</h5>
+            </div>
+        </div>
+
+
+
+    </div>
+    </div>
+
+<!--START HERE-->
+<!--tabs-->
+<section id="tabs">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+</div>
+<!--footer
+<footer id="main-footer" class="bg-sormei">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 pt-5 mx-auto">
+                <p class="lead text-center">copyright &copy; <span id="year"></span></p>
+            </div>
+        </div>
+    </div>
+</footer>
+-->
+
+
+
+<script src="http://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.full.min.js"></script>
+<script src="javascript/bootstrap.min.js"></script>
+<script src="javascript/javascr.js"></script>
+<script>
+    //get the current year for copyright
+    $('#year').text(new Date().getFullYear());
+
+</script>
+</body>
+</html>

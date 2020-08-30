@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <!--<link rel="stylesheet" href="https://www.glyphicons.com">-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Bootstrap Theme</title>
+</head>
+<body>
+<!--START HERE-->
+<!--navbar top-->
+<nav class="navbar navbar-expand-md navbar-light fixed-top bg-white mb-2">
+    <div class="container">
+        <a href="index.html" class="navbar-brand">digidemy</a>
+        <div>
+            <i class="fa fa-search fa-sm search-icon pr-1"></i>
+            <input class="search" type="text" placeholder="جستجو" dir="rtl">
+        </div>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar1">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar1">
+            <ul class="navbar-nav ml-auto text-right">
+                <li class="nav-item">
+                    <a href="courses.html" class="nav-link">دوره ها</a>
+                </li>
+                <li class="nav-item">
+                    <a href="events.html" class="nav-link">رویدادها</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">درباره ما</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--image -->
+<section id="coursedetail" class="py-3 my-5">
+    <div class="container">
+        <div class="row no-gutters">
+            <div class="col-md-3 bg-light text-right details-right py-3 px-2">
+                <h6 class="course-name" contenteditable="true">دوره آموزش جاوااسکریپت</h6>
+                <h9>نوع دوره  </h9><input type="text" class="course-type form-control mb-2" maxlength="10">
+                <h9>شروع دوره  </h9><input type="text" class="course-start form-control mb-2"  maxlength="10">
+                <h9>پایان دوره : </h9><input type="text" class="course-end form-control mb-2"  maxlength="10">
+                <h9>مکان :</h9><input type="text" class="course-location form-control"  maxlength="80">
+            </div>
+            <div class="col-md-6">
+                <img src="images/course.jpg" class="course-image-large" width="100%" alt="">
+            </div>
+            <div class="col-md-3 bg-light text-right details-left py-3 px-2">
+                <p>مدرس : </p><input type="text" class="course-teacher form-control mb-2"  maxlength="50">
+                <p>وضعیت :  </p><input type="text" class="course-status form-control mb-2"  maxlength="20">
+                <p class="text-left">
+                    <input type="submit" class="btn btn-sormei mt-3" value="ثبت">
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<!--course details-->
+<section id="coureseregister" class="mt-5">
+    <div class="container">
+        <div class="row no-gutters text-right details" dir="rtl">
+            <div class="col-md-4 mb-3">
+                <h6>توضیحات</h6>
+                <hr>
+                <div class="discription ml-2"><input type="text" class="form-control" maxlength="50" value="دوره برنامه نویسی پیشرفته جاوا اسکریپت"></div>
+            </div>
+            <div class="col-md-1 mb-3">
+                <h6>طول دوره</h6>
+                <hr>
+                <div class="course-duration ml-1"><input type="text" class="form-control" maxlength="10" value="45:00:00"></div>
+            </div>
+            <div class="col-md-2 mb-3">
+                <h6>پیش نیازها</h6>
+                <hr>
+                <div class="prerequesties ml-2">
+                    <input type="text" class="form-control" maxlength="80"value="Javascript ES5
+                    Javascript ES6">
+
+                </div>
+            </div>
+            <div class="col-md-2 mb-3 text-lg-center">
+                <h6>شروع ثبت نام</h6>
+                <hr>
+                <div class="register-start ml-2">
+                    <input type="text" class="form-control" maxlength="10" dir="ltr" value="98/10/1">
+                </div>
+            </div>
+            <div class="col-md-2 mb-3 text-lg-center">
+                <h6>پایان ثبت نام</h6>
+                <hr>
+                <div class="register-end ml-2">
+                    <input type="text" class="form-control" maxlength="10" dir="ltr" value="98/10/11">
+                </div>
+            </div>
+            <div class="col-md-1 mb-3 text-lg-center">
+                <h6>قیمت(تومان)</h6>
+                <hr>
+                <div class="price">
+                    <input type="text" class="form-control" maxlength="12" value="12,000,000" dir="ltr">
+                </div>
+            </div>
+
+        </div>
+        <hr>
+        <input type="submit" class="btn btn-sormei" value="ثبت">
+    </div>
+</section>
+<!--more details-->
+<section id="moredetails" class="mt-5">
+    <div class="container">
+        <div class="row text-right">
+            <div class="col">
+                <h6>توضیحات بیشتر</h6>
+                <div class="more-details mt-3">
+                    <div  id="toolbar-container" ></div>
+                    <div id="editor"class="border">
+                        <p>
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--headlines description-->
+<section id="course-headlines" class="mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <!-- Editable table -->
+                <div  dir="rtl">
+                    <h6 class="text-right py-4">سرفصل های آموزشی</h6>
+                        <div id="table" class="table-editable">
+      <span class="table-add float-right mb-3 mr-2"><a href="#!" class="text-primary">
+          <i class="fas fa-plus" aria-hidden="true"></i></a></span>
+                            <table class="table table-bordered table-responsive-md table-striped text-center" id="table-1">
+                                <thead>
+                                <tr>
+                                    <th class="text-center">عنوان</th>
+                                    <th class="text-center">توضیحات</th>
+                                    <th class="text-center">طول سرفصل</th>
+                                    <th class="text-center">درجه سختی</th>
+                                    <th class="text-center">مرتب سازی</th>
+                                    <th class="text-center">حذف</th>
+                                </tr>
+                                </thead>
+                                <tbody class="tbody">
+                                <tr>
+                                    <td class="pt-3-half"  contenteditable="true" onclick="this.focus()">آرایه ها</td>
+                                    <td class="pt-3-half"  contenteditable="true" onclick="this.focus()">استفاده از انواع آرایه</td>
+                                    <td class="pt-3-half" contenteditable="true" onclick="this.focus()">2:30:09</td>
+                                    <td class="pt-3-half" contenteditable="true" onclick="this.focus()">متوسط</td>
+                                    <td class="pt-3-half">
+              <span class="table-up"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up"
+                                                                         aria-hidden="true"></i></a></span>
+                                        <span class="table-down"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-down"
+                                                                                                     aria-hidden="true"></i></a></span>
+                                    </td>
+                                    <td>
+              <span class="table-remove"><button type="button"
+                                                 class="btn btn-danger btn-rounded btn-sm my-0">Remove</button></span>
+                                    </td>
+                                </tr>
+                                <!-- This is our clonable table line -->
+                                <tr>
+                                    <td class="pt-3-half" contenteditable="true" onclick="this.focus()">متغیرها</td>
+                                    <td class="pt-3-half" contenteditable="true" onclick="this.focus()">استفاده از متغیرهای محلی و عمومی</td>
+                                    <td class="pt-3-half" contenteditable="true" onclick="this.focus()">2:30:00</td>
+                                    <td class="pt-3-half" contenteditable="true" onclick="this.focus()">آسان</td>
+                                    <td class="pt-3-half">
+              <span class="table-up"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up"
+                                                                         aria-hidden="true"></i></a></span>
+                                        <span class="table-down"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-down"
+                                                                                                     aria-hidden="true"></i></a></span>
+                                    </td>
+                                    <td>
+              <span class="table-remove"><button type="button"
+                                                 class="btn btn-danger btn-rounded btn-sm my-0">Remove</button></span>
+                                    </td>
+                                </tr>
+                                <!-- This is our clonable table line -->
+                                <tr class="hide">
+                                    <td class="pt-3-half" contenteditable="true" onclick="this.focus()">کلاس ها</td>
+                                    <td class="pt-3-half" contenteditable="true" onclick="this.focus()">تعریف و تشخیص کلاس و زیرکلاس</td>
+                                    <td class="pt-3-half" contenteditable="true" onclick="this.focus()">6:24:00</td>
+                                    <td class="pt-3-half" contenteditable="true" onclick="this.focus()">متوسط</td>
+                                    <td class="pt-3-half">
+              <span class="table-up"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up"
+                                                                         aria-hidden="true"></i></a></span>
+                                        <span class="table-down"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-down"
+                                                                                                     aria-hidden="true"></i></a></span>
+                                    </td>
+                                    <td>
+              <span class="table-remove"><button type="button"
+                                                 class="btn btn-danger btn-rounded btn-sm my-0">Remove</button></span>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                </div>
+                <!-- Editable table -->
+            </div>
+        </div>
+    </div>
+</section>
+<!--course-classes-->
+<section id="course-classes" class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <!-- Editable table -->
+                <div dir="rtl">
+                    <h6 class="text-right py-4">شرح جلسات</h6>
+                        <div id="table2" class="table-editable">
+      <span class="table-add2 float-right mb-3 mr-2"><a href="#!" class="text-primary"><i
+              class="fas fa-plus" aria-hidden="true"></i></a></span>
+                            <table class="table table-bordered table-responsive-md table-striped text-center" id="table-2">
+                                <thead>
+                                <tr>
+                                    <th class="text-center">شماره</th>
+                                    <th class="text-center">عنوان</th>
+                                    <th class="text-center">شروع جلسه</th>
+                                    <th class="text-center">پایان جلسه</th>
+                                    <th class="text-center">درجه سختی</th>
+                                    <th class="text-center">مرتب سازی</th>
+                                    <th class="text-center">حذف</th>
+                                </tr>
+                                </thead>
+                                <tbody class="tbody2">
+                                <tr>
+                                    <td class="pt-3-half" contenteditable="true" onclick="this.focus()">1</td>
+                                    <td class="pt-3-half" contenteditable="true" onclick="this.focus()">متغیرها</td>
+                                    <td class="pt-3-half" contenteditable="true" onclick="this.focus()">98/10/25-8:00</td>
+                                    <td class="pt-3-half" contenteditable="true" onclick="this.focus()">98/10/25-10:00</td>
+                                    <td class="pt-3-half" contenteditable="true" onclick="this.focus()">متوسط</td>
+                                    <td class="pt-3-half">
+              <span class="table-up"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up"
+                                                                         aria-hidden="true"></i></a></span>
+                                        <span class="table-down"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-down"
+                                                                                                     aria-hidden="true"></i></a></span>
+                                    </td>
+                                    <td>
+              <span class="table-remove">
+                  <i class="fas fa-trash-alt"></i>
+              </span>
+                                    </td>
+                                </tr>
+                                <!-- This is our clonable table line -->
+                                <tr>
+                                    <td class="pt-3-half" contenteditable="true" onclick="this.focus()">2</td>
+                                    <td class="pt-3-half" contenteditable="true" onclick="this.focus()">آرایه ها</td>
+                                    <td class="pt-3-half" contenteditable="true" onclick="this.focus()">98/10/29-8:00</td>
+                                    <td class="pt-3-half" contenteditable="true" onclick="this.focus()">98/10/29-10:00</td>
+                                    <td class="pt-3-half" contenteditable="true" onclick="this.focus()">آسان</td>
+                                    <td class="pt-3-half">
+              <span class="table-up"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up"
+                                                                         aria-hidden="true"></i></a></span>
+                                        <span class="table-down"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-down"
+                                                                                                     aria-hidden="true"></i></a></span>
+                                    </td>
+                                    <td>
+              <span class="table-remove">
+                  <i class="fas fa-trash-alt"></i>
+              </span>
+                                    </td>
+                                </tr>
+                                <!-- This is our clonable table line -->
+                                <tr>
+                                    <td class="pt-3-half" contenteditable="true" onclick="this.focus()">3</td>
+                                    <td class="pt-3-half" contenteditable="true" onclick="this.focus()">توابع حلی</td>
+                                    <td class="pt-3-half" contenteditable="true" onclick="this.focus()">98/11/03-8:00</td>
+                                    <td class="pt-3-half" contenteditable="true" onclick="this.focus()">98/11/03-10:00</td>
+                                    <td class="pt-3-half" contenteditable="true" onclick="this.focus()">سخت</td>
+                                    <td class="pt-3-half">
+              <span class="table-up"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up"
+                                                                         aria-hidden="true"></i></a></span>
+                                        <span class="table-down"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-down"
+                                                                                                     aria-hidden="true"></i></a></span>
+                                    </td>
+                                    <td>
+              <span class="table-remove">
+                  <i class="fas fa-trash-alt"></i>
+              </span>
+                                    </td>
+                                </tr>
+                                <!-- This is our clonable table line -->
+                                <tr class="hide2">
+                                    <td class="pt-3-half" contenteditable="true" onclick="this.focus()">4</td>
+                                    <td class="pt-3-half" contenteditable="true" onclick="this.focus()">کلاس ها</td>
+                                    <td class="pt-3-half" contenteditable="true" onclick="this.focus()">98/11/05-9:00</td>
+                                    <td class="pt-3-half" contenteditable="true" onclick="this.focus()">98/11/05-11:00</td>
+                                    <td class="pt-3-half" contenteditable="true" onclick="this.focus()">متوسط</td>
+                                    <td class="pt-3-half">
+              <span class="table-up"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up"
+                                                                         aria-hidden="true"></i></a></span>
+                                        <span class="table-down"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-down"
+                                                                                                     aria-hidden="true"></i></a></span>
+                                    </td>
+                                    <td>
+              <span class="table-remove">
+                  <i class="fas fa-trash-alt"></i>
+              </span>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                </div>
+                <!-- Editable table -->
+            </div>
+        </div>
+    </div>
+</section>
+<!--footer-->
+<footer id="main-footer" class="bg-sormei">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 pt-5 mx-auto">
+                <p class="lead text-center">copyright &copy; <span id="year"></span></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+<script src="http://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+<script src="javascript/bootstrap.min.js"></script>
+<script src="javascript/ckeditor.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.full.min.js"></script>
+<script src="javascript/infinite_scroll.js"></script>
+<script src="javascript/javascr.js"></script>
+<script>
+    $('tbody').sortable();
+    //get the current year for copyright
+    $('#year').text(new Date().getFullYear());
+    DecoupledEditor
+        .create( document.querySelector( '#editor' ) )
+        .then( editor => {
+            const toolbarContainer = document.querySelector( '#toolbar-container' );
+
+            toolbarContainer.appendChild( editor.ui.view.toolbar.element );
+        } )
+        .catch( error => {
+            console.error( error );
+        } );
+
+</script>
+</body>
+</html>

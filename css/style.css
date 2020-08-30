@@ -1,0 +1,421 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css);
+@font-face { font-family: "IRANsans"; src: url('../fonts/IRANSansWeb(NoEn).woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url('../fonts/IRANSansWeb(NoEn).ttf') format('truetype'); /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */ }
+body{
+    font-family: "IRANSans";
+}
+.btn{
+    font-family: IRANSans !important;
+}
+.btn-sormei,.bg-sormei{
+    background: rgb(0,99,135);
+    color: white;
+}
+.border-sormei{
+    border-color: rgb(0,99,135);
+}
+.btn-outline-sormeis{
+    border-color:  rgb(0,99,135);
+    color:  rgb(0,99,135);
+    background: white;
+}
+.btn-outline-sormeis:hover{
+    background:  rgb(0,99,135);
+    color: white;
+}
+.text-sormei{
+    color:  rgb(0,99,135);
+}
+.navbar{
+    font-family: IRANSans;
+    font-weight:lighter;
+    color: rgb(45, 52, 54);
+    box-shadow: 0px 2px 3px rgba(0,0,0,0.2);
+}
+.navbar-brand{
+    color: rgb(14,30,79);
+    font-weight: bold;
+    font-size: large;
+}
+.navbar-nav{
+    direction: rtl;
+    position: relative;
+    right: -30px !important;
+}
+.navbar-toggler{
+    border: none;
+}
+.search {
+    font-size: 14px;
+    width: 250px;
+    position: relative;
+    top: -5px;
+    height: 50px;
+    margin-bottom: -80px;
+}
+.search:focus {
+    min-width: 250px;
+    width: 300px;
+}
+.search-icon {
+    position: relative;
+    right: -38px;
+    z-index: 1000;
+    color:  #3b4243;
+}
+
+#devider{
+    font-size: 14px;
+    background: rgb(172,220,242);
+    direction: rtl;
+}
+.carousel-caption a{
+    padding-bottom: 30px;
+    color: white;
+    text-decoration: none;
+    font-family: "B Nazanin";
+}
+.overlay{
+    background: rgba(0,0,0,0.8);
+}
+.carousel-item{
+    background-size: cover;
+}
+.modal-header{
+    direction: rtl;
+}
+.facilities{
+    font-size: 14px;
+}
+#courses{
+    direction: rtl;
+    font-size: 14px;
+}
+.title{
+    font-size: 18px;
+}
+#courses p{
+    font-size: 12px;
+}
+#courses a,#events a,#coursecontent a{
+    text-decoration: none;
+}
+#courses .card .btn{
+    float: left;
+}
+.course {
+    font-family: "IRANSans" !important;
+    font-size: 14px;
+    list-style: none;
+}
+#events{
+    background: rgb(217,231,255);
+    direction: rtl;
+    font-size: 14px;
+}
+#events img{
+    height: 200px;
+    border-radius: 10px;
+    margin-top: -40px;
+}
+#login{
+    direction: rtl;
+}
+.school:hover{
+    box-shadow: 2px 2px 3px rgba(0,0,0,0.4);
+    background: rgba(0,99,135,0.8); !important;
+}
+.school a, .teacherlogin a{
+    text-decoration: none;
+}
+.teacherlogin:hover{
+    background: rgba(0,99,135,0.8); !important;
+    color: white;
+
+}
+
+
+
+/*course page*/
+#course-header{
+    direction: rtl;
+    height: 250px;
+    background: url("../images/header.png");
+    background-position: 0 -450px;
+    color: #ffffff;
+    border-bottom: 1px solid #eee;
+    box-shadow: 0px 2px 3px rgba(0,0,0,0.2);
+}
+.darkoverlay{
+    background: rgba(0,0,0,0.5);
+    height: 250px;
+}
+.breadcrumb{
+    background: transparent;
+}
+.breadcrumb-item a{
+    color: white;
+    text-decoration: none;
+}
+#search .container{
+    direction: rtl;
+    background-image: linear-gradient(25deg,rgb(142,209,236),rgb(0,99,135));
+}
+#search .form-control{
+     background: transparent;
+     border: none;
+ }
+.input-group{
+    background: white;
+    color: rgb(104,104,104);
+}
+.select2-container--default .select2-results > .select2-results__options { direction: rtl; text-align: right; }
+/*course page-contents*/
+#coursecontent,#eventcontent{
+    direction: rtl;
+    font-size: 14px;
+}
+#coursecontent img{
+    height: 200px;
+    border-radius: 10px;
+    width: 95%;
+    margin-top: -30px;
+}
+#coursecontent .card,#eventcontent .card{
+    margin-right: 7px;
+    margin-left: 7px;
+    box-shadow: 0px 2px 3px rgba(0,0,0,0.2);
+}
+#coursecontent .card .btn{
+    float: left;
+}
+
+@media(max-width:767px ) {
+    .search {
+        font-size: 12px;
+        width: 200px;
+        height: 48px;
+
+    }
+    .search:focus {
+        min-width:200px;
+        width: 250px;
+    }
+    .carousel-item{
+        height: 250px;
+    }
+    #events .event{
+        margin-right: 1px;
+        margin-left: 1px;
+    }
+}
+@media(max-width:575px ) {
+    .search {
+        font-size: 12px;
+        width: 75px;
+        height: 48px;
+
+    }
+    .search:focus {
+        min-width:75px;
+        width: 100px;
+    }
+    #coursecontent .card,#eventcontent .card {
+        margin-right: 10px !important;
+        margin-left: 10px !important;
+    }
+    #coursecontent img{
+        height: 150px;
+        border-radius: 10px;
+        width: 95%;
+        margin-top: -30px;
+    }
+}
+/*login page*/
+.login-bg{
+    background: url("../images/loginbg.jpg");
+    background-size: cover;
+}
+.dark{
+    direction: rtl;
+    background: rgba(0,0,0,0.7);
+    height: 900px;
+}
+.tablink {
+    background-color: #006387;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 50%;
+}
+
+.tablink:hover {
+    background-color: #177597;
+}
+.tablink:focus{
+    background-color: white;
+    color: #177597;
+}
+/*Style the tab content (and add height:100% for full page content)*/
+.tabcontent {
+    color: white;
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+}
+
+#login,#signin {background-color: white;}
+
+.input-container {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.input-container input{
+    border-radius: 20px;
+}
+.input-container .btn{
+    border-radius: 10px;
+}
+
+.icon {
+    padding: 10px;
+    padding-left: 5px;
+    margin-left: -35px;
+    z-index: 100;
+    color:  #006387;
+    min-width: 50px;
+    text-align: center;
+}
+/*event page*/
+#event-header{
+    direction: rtl;
+    height: 250px;
+    background: url("../images/loginbg.jpg");
+    background-position: -100px -450px;
+    background-size: cover;
+    color: #ffffff;
+    border-bottom: 1px solid #eee;
+    box-shadow: 0px 2px 3px rgba(0,0,0,0.2);
+}
+/*event page--contents */
+#eventcontent img{
+    height: 200px;
+    border-radius: 10px;
+    width: 95%;
+    margin-top: -30px;
+}
+/*coursedetail page   and classdetail page*/
+#coursedetail , #coureseregister,#moredetails,#course-headlines,#course-classes{
+    font-size: 14px;
+    direction: rtl;
+}
+#coursedetail .details-right,#coursedetail .details-left{
+    box-shadow: 0px 2px 3px rgba(0,0,0,0.2);
+}
+/*classdetail page*/
+#class-sessions,#class-list,#homework,#course-headlines-status{
+    font-size: 14px;
+}
+/*coursecreate page*/
+#create-course{
+    direction: rtl;
+    font-size: 14px;
+}
+.input-container-create {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.input-container-create input{
+    border-radius: 5px;
+}
+/*coursecreatepg2 page*/
+.pt-3-half {
+    padding-top: 1.4rem;
+}
+#editor{
+    text-align: right;
+}
+.fa-trash-alt{
+    color: #dc3545;
+}
+
+/*dashboard page*/
+#collapse-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    background: url("../images/bg_1.jpg");
+}
+.collapse-overlay{
+    height: 100%;
+    background:  rgba(117,198,235,0.4);
+}
+#collapse-menu ul{
+    margin: 0;
+    padding: 0;
+}
+#collapse-menu ul li{
+    list-style: none;
+    display: block;
+    line-height: 50px;
+}
+#collapse-menu ul li.active,#collapse-menu .dropdown ul li.active{
+    background: #007bff;
+}
+
+#collapse-menu ul li a{
+    color: #FFF;
+    font-family: IRANsans;
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    text-decoration: none;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 0.1s;
+    -webkit-transition-timing-function: ease-out;
+    -moz-transition-property: all;
+    -moz-transition-duration: 0.1s;
+    -moz-transition-timing-function: ease-out;
+    -ms-transition-property: all;
+    -ms-transition-duration: 0.1s;
+    -ms-transition-timing-function: ease-out;
+    -o-transition-property: all;
+    -o-transition-duration: 0.1s;
+    -o-transition-timing-function: ease-out;
+    transition-property: all;
+    transition-duration: 0.1s;
+    transition-timing-function: ease-out;
+}
+
+#collapse-menu ul li a:hover{
+    width: 250px;
+    color:#fff;
+    background:  #2f89fc;
+    border-bottom: 1px solid  #2f89fc;
+}
+
+.menu_icon {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    background: url(../images/index.png) no-repeat;
+    width: 30px;
+    height: 18px;
+}
+#main-header{
+    width: 100% !important;
+}
+#dashboard{
+    font-size: 14px;
+    direction: rtl;
+}
+

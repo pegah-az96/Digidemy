@@ -1,0 +1,25 @@
+.fc-widget-content, .fc-h-event, .fc-event-container {
+    height: 5em !important;
+}
+
+.fc .fc-view-container td {
+    border-bottom: 2px solid #343a40 !important;
+}
+
+.fc .fc-view-container .fc-bg tr > td {
+    border: 2px solid grey;
+}
+
+.fc-event {
+    font-size: 12px !important;
+    height: 5.7em !important;
+    padding-right: 0 !important;
+}
+
+.fc-time {
+    display: block !important;
+}
+
+.fc-event > .fc-content {
+    padding: 1em !important;
+}

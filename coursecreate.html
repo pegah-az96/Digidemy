@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <!--<link rel="stylesheet" href="https://www.glyphicons.com">-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Bootstrap Theme</title>
+</head>
+<body>
+<!--navbar top-->
+<nav class="navbar navbar-expand-md navbar-light fixed-top bg-white mb-2">
+    <div class="container">
+        <a href="index.html" class="navbar-brand">digidemy</a>
+        <div>
+            <i class="fa fa-search fa-sm search-icon pr-1"></i>
+            <input class="search" type="text" placeholder="جستجو" dir="rtl">
+        </div>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar1">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar1">
+            <ul class="navbar-nav ml-auto text-right">
+                <li class="nav-item">
+                    <a href="courses.html" class="nav-link">دوره ها</a>
+                </li>
+                <li class="nav-item">
+                    <a href="events.html" class="nav-link">رویدادها</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">درباره ما</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--create course-->
+<section id="create-course" class="py-5 mt-5">
+    <div class="container">
+        <div class="card">
+                <div class="card-header bg-primary">
+                    <div class="row">
+                        <div class="col-8">
+                            <h6 class="text-white text-right">ایجاد دوره جدید</h6>
+                        </div>
+                        <div class="col-4">
+                            <a href="dashboard.html" class="btn btn-sm btn-outline-light "><i class="fas fa-arrow-left"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            <div class="card-body">
+                <form action="">
+                <div class="row mt-4">
+                    <div class="col-md-6">
+                        <h6 class="text-sormei text-right  mr-3">نام دوره</h6>
+                        <div class="input-container-create pl-3">
+                            <input class="form-control mr-3" type="text" id="course-name">
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-right mr-3">
+                        <h6 class="text-sormei text-right ">نوع دوره</h6>
+                        <select dir="rtl" id="course-type" class="form-control select mr-5">
+                            <option value="online">آنلاین</option>
+                            <option value="hozuri" selected>حضوری</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+
+                <div class="row pt-3">
+                    <div class="col-md-6">
+                        <h6 class="text-sormei text-right  mr-3">محل برگزاری</h6>
+                        <div class="input-container-create pl-3">
+                            <i class="fa fa-map-marker icon pr-4"></i>
+                            <input class="form-control pr-5" type="text" placeholder="|" id="username">
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-right">
+                        <h6 class="text-sormei text-right mr-3">پیش نیازها</h6>
+                        <div class="input-container-create pl-3">
+                            <input class="form-control mr-3" type="text" id="prerequesties">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row pt-3">
+                    <div class="col-md-6">
+                        <h6 class="text-sormei text-right  mr-3">شروع ثبت نام</h6>
+                        <div class="input-container-create pl-3">
+                            <i class="fa fa-calendar icon pr-4"></i>
+                            <input class="form-control pr-5" type="text" placeholder="|" id="register-start">
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-right">
+                        <h6 class="text-sormei text-right  mr-3">پایان ثبت نام</h6>
+                        <div class="input-container-create pl-3">
+                            <i class="fa fa-calendar icon pr-4"></i>
+                            <input class="form-control pr-5" type="text" placeholder="|" id="register-end">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row pt-3">
+                    <div class="col-md-6">
+                        <h6 class="text-sormei text-right  mr-3">طول دوره</h6>
+                        <div class="input-container-create pl-3">
+                            <i class="fa fa-clock icon pr-4"></i>
+                            <input class="form-control pr-5" type="text" placeholder="|" id="course-duration">
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-right" dir="ltr">
+                        <h6 class="text-sormei text-right mr-3">قیمت</h6>
+                        <div class="input-container-create input-group pl-2">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">تومان</span>
+                            </div>
+                            <input class="form-control mr-3" type="text" id="price">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row pt-3">
+                    <div class="col-md-6">
+                        <h6 class="text-sormei text-right  mr-3">شرح مختصر</h6>
+                        <div class="input-container-create pl-3">
+                            <textarea id="discription" class="form-control mr-3"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h6 class="text-sormei text-right  mr-3">توضیحات بیشتر</h6>
+                        <div class="input-container-create pl-3">
+                            <textarea id="more-discription" class="form-control mr-3"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row pt-3">
+                    <div class="col-md-6">
+                        <h6 class="text-sormei text-right mr-3">تگ های مرتبط</h6>
+                        <div class="input-container-create pl-3">
+                            <input class="form-control mr-3" type="text" id="tags">
+                            <i class="fas fa-plus align-self-center pr-1" onclick="tagadder()"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-left mt-5">
+                    <a href="coursecreatepg2.html" class="btn btn-success">ادامه</a>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script src="http://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+<script src="javascript/jalali.js"></script>
+<script src="javascript/calendar.js"></script>
+<script src="javascript/calendar-setup.js"></script>
+<script src="javascript/calendar-fa.js"></script>
+<script src="javascript/bootstrap.min.js"></script>
+<script src="javascript/javascr.js"></script>
+<script>
+    //get the current year for copyright
+    $('#year').text(new Date().getFullYear());
+
+
+</script>
+</body>
+</html>
